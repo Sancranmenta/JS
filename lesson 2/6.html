@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+        //где arg1, arg2 – значения аргументов, operation – строка с названием операции.
+        //В зависимости от переданного значения операции выполнить одну из арифметических
+        //операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).
+        "use strict"
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'Сложение':
+                    return (arg1 + arg2);
+                    break;
+                case 'Вычитание':
+                    return (arg1 - arg2);
+                    break;
+                case 'Умножение':
+                    return (arg1 * arg2);
+                    break;
+                case 'Деление':
+                    return (arg1 / arg2);
+                    break;
+            }
+        }
+        console.log(mathOperation(20, 4, 'Умножение'))
+
+
+    </script>
+
+</body>
+
+</html>
