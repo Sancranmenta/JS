@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        "use strict"
+        let basket = {
+            goods: [
+                {
+                    name: 'apple',
+                    quantity: 10,
+                    price: 400
+                },
+
+                {
+                    name: 'orange',
+                    quantity: 5,
+                    price: 300
+                },
+
+                {
+                    name: 'banana',
+                    quantity: 3,
+                    price: 250
+                },
+            ],
+
+            countBasketPrice() {
+                let sum = 0;
+                for (let i = 0; i < basket.goods.length; i++) {
+                    sum += (basket.goods[i].quantity * basket.goods[i].price);
+                }
+                return sum;
+
+            },
+
+        };
+
+        console.log('Общая стоимость товаров в вашей корзине: ' + basket.countBasketPrice());
+
+    </script>
+
+</body>
+
+</html>
